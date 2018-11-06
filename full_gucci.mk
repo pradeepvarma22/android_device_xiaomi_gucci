@@ -24,5 +24,5 @@ $(call inherit-product, device/xiaomi/gucci/device.mk)
 PRODUCT_DEVICE := gucci
 PRODUCT_NAME := full_gucci
 PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := Redmi Note Prime
+PRODUCT_MODEL := HM NOTE 1S
 PRODUCT_MANUFACTURER := Xiaomi
