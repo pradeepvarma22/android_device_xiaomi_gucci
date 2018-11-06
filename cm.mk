@@ -25,3 +25,12 @@ BOARD_VENDOR := xiaomi
 PRODUCT_DEVICE := gucci
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
+
+TARGET_VENDOR_PRODUCT_NAME := gucci
+TARGET_VENDOR_DEVICE_NAME := gucci
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    TARGET_DEVICE=gucci \
+    PRODUCT_NAME=gucci \
+    BUILD_FINGERPRINT=Xiaomi/gucci/gucci:4.4.4/KTU84P/7.1.1.0:user/release-keys \
+    PRIVATE_BUILD_DESC="gucci-user 4.4.4 KTU84P 7.1.1.0 release-keys"
