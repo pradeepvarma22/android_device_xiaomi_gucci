@@ -70,11 +70,6 @@ TARGET_GPS_HAL_PATH := $(DEVICE_PATH)/gps
 TARGET_NO_RPC := true
 
 
-
-# Init
-TARGET_LIBINIT_DEFINES_FILE := $(DEVICE_PATH)/init/init_gucci.c
-TARGET_UNIFIED_DEVICE := true
-
 # Keymaster
 TARGET_PROVIDES_KEYMASTER := true
 
@@ -104,7 +99,6 @@ BOARD_SEPOLICY_DIRS += \
     $(DEVICE_PATH)/sepolicy
 
 BOARD_SEPOLICY_UNION += \
-    memcheck.te \
     irsc_util.te \
     mm-qcamerad.te \
     system_server.te \
