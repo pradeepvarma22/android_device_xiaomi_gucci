@@ -80,9 +80,19 @@ ADDITIONAL_DEFAULT_PROPERTIES += \
     ro.usb.id.ums=ff20 \
     ro.usb.id.ums_adb=ff28
 
+
 # GPS
 PRODUCT_PACKAGES += \
     gps.msm8916
+
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/gps/flp.conf:system/etc/flp.conf \
+    $(LOCAL_PATH)/gps/gps.conf:system/etc/gps.conf \
+    $(LOCAL_PATH)/gps/izat.conf:system/etc/izat.conf \
+    $(LOCAL_PATH)/gps/quipc.conf:system/etc/quipc.conf \
+    $(LOCAL_PATH)/gps/sap.conf:system/etc/sap.conf
+
 
 # Connectivity Engine support (CNE)
 PRODUCT_PACKAGES += \
@@ -106,13 +116,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/ims/imscm.xml:system/etc/permissions/imscm.xml \
     $(LOCAL_PATH)/configs/ims/ims.xml:system/etc/permissions/ims.xml \
     $(LOCAL_PATH)/configs/ims/qti_permissions.xml:system/etc/permissions/qti_permissions.xml
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/gps/flp.conf:system/etc/flp.conf \
-    $(LOCAL_PATH)/gps/gps.conf:system/etc/gps.conf \
-    $(LOCAL_PATH)/gps/izat.conf:system/etc/izat.conf \
-    $(LOCAL_PATH)/gps/quipc.conf:system/etc/quipc.conf \
-    $(LOCAL_PATH)/gps/sap.conf:system/etc/sap.conf
 
 # Thermal
 PRODUCT_COPY_FILES += \

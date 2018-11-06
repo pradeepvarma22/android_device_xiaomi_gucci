@@ -51,9 +51,12 @@ TARGET_QCOM_NO_FM_FIRMWARE := true
 # Fonts
 EXTENDED_FONT_FOOTPRINT := true
 
+
 # GPS
 TARGET_GPS_HAL_PATH := $(DEVICE_PATH)/gps
 TARGET_NO_RPC := true
+
+
 
 # Init
 TARGET_LIBINIT_DEFINES_FILE := $(DEVICE_PATH)/init/init_gucci.c
