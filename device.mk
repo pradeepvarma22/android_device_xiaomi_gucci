@@ -49,6 +49,11 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_policy.conf:system/etc/audio_policy.conf \
     $(LOCAL_PATH)/audio/mixer_paths.xml:system/etc/mixer_paths_qrd_skui.xml
 
+# Camera
+PRODUCT_PACKAGES += \
+    SnapdragonCamera \
+    camera.msm8916 \
+    libmm-qcamera
 
 # IO Scheduler
 PRODUCT_PROPERTY_OVERRIDES += \
