@@ -142,8 +142,8 @@ vendor/lib/libcne.so
 vendor/lib/libcneapiclient.so
 vendor/lib/libcneconn.so
 vendor/lib/libcneqmiutils.so
-vendor/lib/libmasc.so
 vendor/lib/libNimsWrap.so
+vendor/lib/libmasc.so
 vendor/lib/libvendorconn.so
 vendor/lib/libwqe.so
 vendor/lib/libxml.so
